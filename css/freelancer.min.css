@@ -391,3 +391,12 @@ a:hover {
 	background-color: #1a0a22;
 	border-color: #1a0a22
 }
+
+#h3-contact {
+	color:black;
+	display:block;
+	text-align:center;
+	font-size:3vh;
+	margin-top:1.5vh;
+	margin-bottom:2.5vh;
+  }
