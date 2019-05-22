@@ -393,10 +393,15 @@ a:hover {
 }
 
 #h3-contact {
-	color:black;
 	display:block;
 	text-align:center;
-	font-size:3vh;
+	margin: 0 auto;
 	margin-top:1.5vh;
 	margin-bottom:2.5vh;
+	width:50vw;
+  }
+
+  #h3-contact p{
+	text-align:left;
+	font-size:3vh;
   }
