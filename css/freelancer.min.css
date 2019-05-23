@@ -419,3 +419,7 @@ a:hover {
   #main-text {
 	font-size:3vh;
 }
+
+#main-text a {
+	color:purple;
+}
