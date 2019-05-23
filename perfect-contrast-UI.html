@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137229281-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-137229281-1');
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Burns Vaughan - Fullstack Developer - Wordpress Developer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Burns Vaughan</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.htm#about">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.htm#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container-1">
+      <h1 class="text-center text-capitalize title1">How To Do Perfect Contrast in UI Design - Blueprint</h1>
+      <hr class="star-dark mb-5">
+    <div id="main-text">
+        Today I’m going to show you a prototype I created to show some examples of bad contrast versus good contrast.<br><br>
+    <strong>How do you create UI design that has perfect contrast? The lightness or darkness of colors needs to contrast so that the viewer can easily read what is on the page. There are web standards for how far apart the colors need to be in contrast that have been put out by the World Wide Web Consortium (W3C), where the maximum required ratio is 7 to 1. You can easily check if contrasting colors meet all the W3C standards by using this free online tool.<br><br></strong>
+Common issues arise in coding the contrast in CSS, as well as from a design perspective. Which are all covered below.<br><br>
+<h2>Should I Use the Same Contrast Rules For Menus And For The Different Sections Of the Website/App?</h2><br>
+Menus and sections can be treated a bit differently. Separating a menu from the main page content is not necessary because it does not impact the readability. <strong>The same rule applies for different sections of the page,</strong> such as the main content of the page and the footer.<br><br>
+However, it is more visually appealing and gives the viewer a break to separate these by a color that has higher contrast, however some of the most successful apps such as discord do not do this. So be guided by what you feel is best for the project.<br><br>
+Here is an example of a badly contrasted element on a page and some examples of how it would look with better contrast.<br><br>
+<img src="img/contrast-nav1.jpg" alt=""><br><br>
+See how the word "Company" in red is a similar hue to the background of the menu bar, which makes it difficult to read.<br><br>
+<img src="img/contrast-nav2.jpg" alt=""><br><br>
+Here the Logo has a light background added to it making it much easier to read.<br><br>
+<img src="img/contrast-nav3.jpg" alt=""><br><br>
+A darker color behind the logo improves how easy it is to read the same amount as the light background.<br><br>
+<h2>Common Issues That Arise When Applying the W3C Standards Of Contrast And How To Solve Them</h2><br>
+A background image typically has a mish mash of colors making the selection of a text color that overlays it not contrast correctly or be readable. This is because <strong>parts of the text sit on lighter areas whereas other parts of the text sit on dark areas</strong> of the image. Here’s an example:<br><br>
+<img src="img/contrast-overlay1.jpg" alt=""><br><br>
+In order to have the perfect contrast in this case you must overlay the background image on either a white or a black background and then adjust the opacity of the image so that the white or black comes through.<br><br>
+Here's what it looks like applied to the above example:<br><br>
+<img src="img/contrast-overlay2.jpg" alt=""><br><br>
+or<br><br>
+<img src="img/contrast-overlay3.jpg" alt=""><br><br>
+Then use either a light or dark colored text based on what the underlying color is to contrast it perfectly. Don’t worry all the HTML and CSS to can be found below, alternatively you can edit the image in photoshop or similar to make is lighter or darker.<br><br>
+Another option is to use brand colors as the underlying color. You will just need to make sure that the shade is dark or light enough so that it contrasts well enough with the text. <strong>Here are some an example of using a different color under the image. </strong><br><br>
+<img src="img/contrast-overlay5.jpg" alt=""><br><br>
+Difficult to read<br><br>
+<img src="img/contrast-overlay6.jpg" alt=""><br><br>
+Easier to read<br><br>
+<img src="img/contrast-overlay7.jpg" alt=""><br><br>
+<h2>What about if I don’t want to lighten or darken the background image because I like the way the image looks?</h2><br>
+The way to do this is by moving the elements on the page, if possible, to a region of the image that has a uniform color. For example a section of the image can have a darker shade large enough so that the text you want to fit there and size looks good. <strong>Not too squashed.</strong> It is important to use your artistic instincts with this and go with what you think looks good, and as long as the contrast adheres to web standards it will be user-friendly.<br><br>
+Here is an example of how this would look:
+<br><br>
+<img src="img/contrast-overlay8.jpg" alt=""><br><br>
+You may have to resize the image so that you have a region large enough for the text to all fit in. For laying out the design it is recommended to use free tools such as <strong>Adobe XD or Figma</strong> that allow you to mock up your designs before coding them into your website or app. Once you have how you want the design to look use the code below, however, <strong>don’t use the background-color or background-blend-mode lines of code.</strong> Everything else remains the same.<br><br>
+Another option is to be selective with your image and choose one that is either very dark or light to begin with and in that way you won’t have to resize it or modify it. <br><br>
+<h2>How Do I Code Transparent Images Overlaying a Background Into My Website/App?</h2><br>
+The process is to create a section of the website with a fixed or fluid size, then to give that a background color.  Within that section add html tags for the text and buttons.<br><br>
+To overlay a transparent image over the top is a little complex, so I have included the exact code below, you can copy and paste it as is.<br><br>
+In words you create the section in html and give it and id of top-section. Then using CSS give the section a fixed height and width, assign a background image, set the size to be the size section, set the image to no repeat (it is set to repeat by default), set the background color using rgba. The last value 0.6 in the example is the opacity, 0.6 = 60% opacity.<br><br>
+Here is the code that just works, copy and paste it:<br><br>
+<strong>HTML</strong><xmp>
+<section id=”top-section”>
+<p>Some text</p>
+</section>
+    </xmp>
+<strong>CSS</strong><xmp>
+#top-section {
+height:100vh;
+width:100vw;
+background:url(‘c:/documents/background-image.jpg’);
+background-size: cover;
+background-repeat: no-repeat; 
+background-color: rgba(255,255,255,0.6);
+background-blend-mode: lighten;
+}
+</xmp>
+<br>
+Add the other elements with the text and buttons within the section tags and they will automatically overlay the background image.<br><br>
+The background image color in the example is black, for white use rgba(0,0,0,0.6) because rgba refers to red, green, blue, and alpha. So you are telling it how much <strong>red, green, blue </strong>and alpha to use on a scale from 0 to 255, 255 being the maximum and alpha being the transparency. For white you want zero red, zero blue, and zero green.<br><br>
+In order to get a brand color as the underlying color rather than black or white as above, you will need to convert your brand color to an rgba format. To do this there are two options, you can switch between hex, and rgba by using an online converter tool for free by searching Google for hex to rgba converter. <br><br>
+There is also a <strong>cool technique</strong> you can use if you already have the colors on your web page or app, which is to use the developer tools. In Chrome this is done by <strong>right-clicking anywhere on the page and clicking inspect.</strong> <br><br>If you are using other browsers the same tools exist and if you use an obscure browser simply download Chrome.<br><br>
+This will bring up the developer tools pane. Then you can find the color in the CSS of the far right section, and hold shift and left click on the small box that has the color in it next to the hex value which should have either three or six numbers preceded by a hash for example: #333 and #678689. The numbers will vary based on what the color is. <br><br>Doing so will switch between rgba, hex, and two other color formats that aren’t used commonly.<br><br>
+You may also run into colors that are in CSS by default <strong>these can also be changed using the same method </strong>for example you may just have color:blue; rather than a hex or rgba color. However, in this case you may have to search for blue in hex, or the shift click method will work on these types of colors aswell.<br><br>
+From there you can copy and paste the rgba value into your CSS code so that you get the correct color.<br><br>
+<h2>Related Questions</h2><br>
+<strong>What Typography Should Be Used in Good UI Design?</strong>
+There are a range of different typefaces one can use. Typically you want to use one font for headings and on font for text. This is a personal preference and depends on the look and feel of the brand. The rule is also to use Sans Serif fonts because there are easiest to read.<br><br>
+<strong>What Colors Should I Use in Good UI Design?</strong>
+There are two types of color schemes to use in UI design. The first is monochromatic in which all colors are shades of the same color. For example all the blues between the darkest blue possible and the lightest blue possible. The other is a range of different colors. The number of colors to use and what colors depends upon the brand design.
+
+    </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">Ellerlie, Auckland
+            <br>New Zealand</p>
+        </div>
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/burnsvaughan99" target="_blank">
+                <i class="fab fa-fw fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/burns-vaughan/" target="_blank">
+                <i class="fab fa-fw fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/burnsvaughan" target="_blank">
+                <i class="fab fa-fw fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-uppercase mb-4">About Burns</h4>
+          <p class="lead mb-0">Full Stack Developer - Wordpress Developer</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Burns Vaughan 2019 - Fullstack Developer - Wordpress Developer</small>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Website Build and Recoded as a Wordpress theme</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
+            <p class="mb-5">Restaurant website recoded as a Wordpress theme. <br><br>The website can be installed on a fresh installation of Wordpress by uploading the theme.<br><br>Content can be edited by logging into the wp-admin<br><br>
+            View the website, the original website code, and the Wordpress theme code below.<br><br><br>
+            <a class="btn btn-primary btn-lg rounded-pill" href="http://restaurant.burnsvaughan.com" target="new">
+              <i class="fa fa-close"></i>
+              View Website</a>
+              <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/burnsvaughan/restaurant-website" target="new">
+                <i class="fa fa-close"></i>
+                Original Code</a>
+                <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/burnsvaughan/restaurant-website-wordpress-theme" target="new">
+                  <i class="fa fa-close"></i>
+                  Wordpress Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Website Recoded as a Wordpress theme</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
+            <p class="mb-5">Digital Agency website recoded as a Wordpress theme. <br><br>The website can be installed on a fresh installation of Wordpress by uploading the theme.<br><br>Content can be edited by logging into the wp-admin<br><br>
+            View the website, the original website code, and the Wordpress theme code below.<br><br><br>
+            <a class="btn btn-primary btn-lg rounded-pill" href="https://digitalagency.burnsvaughan.com/" target="new">
+              <i class="fa fa-close"></i>
+              View Website</a>
+              <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/burnsvaughan/digital-agency" target="new">
+                <i class="fa fa-close"></i>
+                Original Code</a>
+                <a class="btn btn-primary btn-lg rounded-pill" href="https://github.com/burnsvaughan/digital-agency-wordpress-theme" target="new">
+                  <i class="fa fa-close"></i>
+                  Wordpress Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Coming Soon...</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
+            <p class="mb-5">Coming Soon...</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Coming Soon...</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
+            <p class="mb-5">Coming Soon...</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Coming Soon...</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
+            <p class="mb-5">Coming Soon...</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 6 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Coming Soon...</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
+            <p class="mb-5">Coming Soon...</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>

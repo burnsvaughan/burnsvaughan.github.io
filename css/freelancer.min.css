@@ -72,7 +72,7 @@ section h2 {
 
 @media (min-width:992px) {
 	section h2 {
-		font-size: 3rem;
+		font-size: 2.25rem;
 		line-height: 2.5rem
 	}
 }
@@ -405,3 +405,17 @@ a:hover {
 	text-align:left;
 	font-size:3vh;
   }
+
+  .container-1{
+	  width:70vw;
+	  margin:0 auto;
+	  padding: 15vh 0 0 0;
+  }
+
+  .title1 {
+	  font-size:10vh;
+  }
+
+  #main-text {
+	font-size:3vh;
+}
