@@ -41,7 +41,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html/#page-top">Burns Vaughan</a>
+      <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">Burns Vaughan</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -73,8 +73,8 @@
 Common issues arise in coding the contrast in CSS, as well as from a design perspective. Which are all covered below.<br><br>
 <h2>Should I Use the Same Contrast Rules For Menus And For The Different Sections Of the Website/App?</h2><br>
 Menus and sections can be treated a bit differently. Separating a menu from the main page content is not necessary because it does not impact the readability. <strong>The same rule applies for different sections of the page,</strong> such as the main content of the page and the footer.<br><br>
-However, it is more visually appealing and gives the viewer a break to separate these by a color that has higher contrast, however some of the most successful apps such as discord do not do this. So be guided by what you feel is best for the project.<br><br>
-Here is an example of a badly contrasted element on a page and some examples of how it would look with better contrast.<br><br>
+However, it can be more visually appealing and give the viewer a break to separate them by a color that has higher contrast. This is not required for a successful app because some of the most successful apps such as Discord do not do this. So be guided by what you feel is best for the project.<br><br>
+To illustrate contrast, here is an example of a badly contrasted element on a page and how it would look with better contrast.<br><br>
 <img src="img/contrast-nav1.jpg" alt=""><br><br>
 See how the word "Company" in red is a similar hue to the background of the menu bar, which makes it difficult to read.<br><br>
 <img src="img/contrast-nav2.jpg" alt=""><br><br>
@@ -84,30 +84,28 @@ A darker color behind the logo improves how easy it is to read the same amount a
 <h2>Common Issues That Arise When Applying the W3C Standards Of Contrast And How To Solve Them</h2><br>
 A background image typically has a mish mash of colors making the selection of a text color that overlays it not contrast correctly or be readable. This is because <strong>parts of the text sit on lighter areas whereas other parts of the text sit on dark areas</strong> of the image. Here’s an example:<br><br>
 <img src="img/contrast-overlay1.jpg" alt=""><br><br>
-In order to have the perfect contrast in this case you must overlay the background image on either a white or a black background and then adjust the opacity of the image so that the white or black comes through.<br><br>
+In order to have sufficient contrast in this case you must overlay the background image on either a white or a black background and then adjust the opacity of the image so that the white or black comes through.<br><br>
 Here's what it looks like applied to the above example:<br><br>
 <img src="img/contrast-overlay2.jpg" alt=""><br><br>
 or<br><br>
 <img src="img/contrast-overlay3.jpg" alt=""><br><br>
-Then use either a light or dark colored text based on what the underlying color is to contrast it perfectly. Don’t worry all the HTML and CSS to can be found below, alternatively you can edit the image in photoshop or similar to make is lighter or darker.<br><br>
-Another option is to use brand colors as the underlying color. You will just need to make sure that the shade is dark or light enough so that it contrasts well enough with the text. <strong>Here are some an example of using a different color under the image. </strong><br><br>
+Then using either a light or dark colored text based on what the underlying color is to contrast it perfectly. Don’t worry all the HTML and CSS to can be found below, alternatively, you can edit the image in photoshop or similar to make is lighter or darker.<br><br>
+Another option is to use brand colors as the underlying color. You will just need to make sure that the shade is dark or light enough so that it contrasts well enough with the text. <strong>Here are some examples of using a different color under the image. </strong><br><br>
 <img src="img/contrast-overlay5.jpg" alt=""><br><br>
 Difficult to read<br><br>
 <img src="img/contrast-overlay6.jpg" alt=""><br><br>
 Easier to read<br><br>
 <img src="img/contrast-overlay7.jpg" alt=""><br><br>
 <h2>What about if I don’t want to lighten or darken the background image because I like the way the image looks?</h2><br>
-The way to do this is by moving the elements on the page, if possible, to a region of the image that has a uniform color. For example a section of the image can have a darker shade large enough so that the text you want to fit there and size looks good. <strong>Not too squashed.</strong> It is important to use your artistic instincts with this and go with what you think looks good, and as long as the contrast adheres to web standards it will be user-friendly.<br><br>
+You can achieve perferfect contrast by moving the elements on the page, if possible for your image, to a region of the image that has a uniform color. For example a section of the image can have a darker shade large enough so that the text can fit there and still look good. <strong>Not too squashed.</strong> It is important to use your artistic instincts with this and go with what you feel looks good, and, as long as the contrast adheres to web standards it will be user-friendly.<br><br>
 Here is an example of how this would look:
 <br><br>
 <img src="img/contrast-overlay8.jpg" alt=""><br><br>
 You may have to resize the image so that you have a region large enough for the text to all fit in. For laying out the design it is recommended to use free tools such as <strong>Adobe XD or Figma</strong> that allow you to mock up your designs before coding them into your website or app. Once you have how you want the design to look use the code below, however, <strong>don’t use the background-color or background-blend-mode lines of code.</strong> Everything else remains the same.<br><br>
-Another option is to be selective with your image and choose one that is either very dark or light to begin with and in that way you won’t have to resize it or modify it. <br><br>
+Another option is to select a different image that is either very dark or light to begin with so that you don't have to resize or modify it. <br><br>
 <h2>How Do I Code Transparent Images Overlaying a Background Into My Website/App?</h2><br>
-The process is to create a section of the website with a fixed or fluid size, then to give that a background color.  Within that section add html tags for the text and buttons.<br><br>
-To overlay a transparent image over the top is a little complex, so I have included the exact code below, you can copy and paste it as is.<br><br>
-In words you create the section in html and give it and id of top-section. Then using CSS give the section a fixed height and width, assign a background image, set the size to be the size section, set the image to no repeat (it is set to repeat by default), set the background color using rgba. The last value 0.6 in the example is the opacity, 0.6 = 60% opacity.<br><br>
-Here is the code that just works, copy and paste it:<br><br>
+The process is to create a section of the website with a fixed or fluid size using the vw (viewport width) or vh (viewport height)properties that adjust to the size of the screen, then to give that a background color. The code is found below. Within that section add html tags for the text and buttons.<br><br>
+There are a bunch of issues that arise when giving your section a fixed with in pixels or a percentage so I recommend simply copy and pasting the code below.<br><br>
 <strong>HTML</strong><xmp>
 <section id=”top-section”>
 <p>Some text</p>
@@ -125,10 +123,11 @@ background-blend-mode: lighten;
 }
 </xmp>
 <br>
-Add the other elements with the text and buttons within the section tags and they will automatically overlay the background image.<br><br>
+Explaining the code in words. Create the section tag in html and give it an id of top-section. Then using CSS give the section a fixed height and width. Assign a background image, and set the background size to be the size of the section using the cover attribute. Set the image to no repeat (it is set to repeat by default), set the background color using rgba. The last value 0.6 refers to the opacity, 0.6 = 60% opacity. So adjust the opacity to match what you came with in your design or experiment for what gives you best contrast and readibility based on your image and background.<br><br>
 The background image color in the example is black, for white use rgba(0,0,0,0.6) because rgba refers to red, green, blue, and alpha. So you are telling it how much <strong>red, green, blue </strong>and alpha to use on a scale from 0 to 255, 255 being the maximum and alpha being the transparency. For white you want zero red, zero blue, and zero green.<br><br>
-In order to get a brand color as the underlying color rather than black or white as above, you will need to convert your brand color to an rgba format. To do this there are two options, you can switch between hex, and rgba by using an online converter tool for free by searching Google for hex to rgba converter. <br><br>
-There is also a <strong>cool technique</strong> you can use if you already have the colors on your web page or app, which is to use the developer tools. In Chrome this is done by <strong>right-clicking anywhere on the page and clicking inspect.</strong> <br><br>If you are using other browsers the same tools exist and if you use an obscure browser simply download Chrome.<br><br>
+Add the other elements with the text and buttons within the section tags, I'll leave you to do this, and any elements will automatically overlay the background image.<br><br>
+In order to get a brand color as the underlying color rather than black or white as above, you will need to convert your brand color to an rgba format. To do this there are two options, you can switch between hex, and rgba by using an online converter tool for free by searching Google for a hex to rgba converter. <br><br>
+There is also a <strong>technique</strong> you can use if you already have the colors on your web page or app, which is to use the developer tools. In Chrome this is done by <strong>right-clicking anywhere on the page and clicking inspect.</strong> <br><br>If you are using other browsers the same tools exist and if you use an obscure browser simply download Chrome.<br><br>
 This will bring up the developer tools pane. Then you can find the color in the CSS of the far right section, and hold shift and left click on the small box that has the color in it next to the hex value which should have either three or six numbers preceded by a hash for example: #333 and #678689. The numbers will vary based on what the color is. <br><br>Doing so will switch between rgba, hex, and two other color formats that aren’t used commonly.<br><br>
 You may also run into colors that are in CSS by default <strong>these can also be changed using the same method </strong>for example you may just have color:blue; rather than a hex or rgba color. However, in this case you may have to search for blue in hex, or the shift click method will work on these types of colors aswell.<br><br>
 From there you can copy and paste the rgba value into your CSS code so that you get the correct color.<br><br>
